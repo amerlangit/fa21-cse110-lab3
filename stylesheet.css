@@ -1,0 +1,26 @@
+/* i like purple for the biggest text */
+h1 {
+    color: purple;
+    text-align: center;
+  }
+  h2 {
+    color: rgb(216, 52, 142);
+    text-align: center;
+  }
+  h3 {
+    color: hsl(179, 100%, 47%);
+  }
+
+  /* for centering my images */
+  img.center {
+    display: block;
+    margin: 0 auto;
+    }
+  video {
+    display: block;
+    margin: 0 auto;
+    }
+  figure {
+    display: block;
+    margin: 0 auto;
+    }
