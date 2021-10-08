@@ -1,26 +1,38 @@
 /* i like purple for the biggest text */
-h1 {
+  h1 {
     color: purple;
     text-align: center;
+    font-size:50px;
+    position:static
   }
   h2 {
     color: rgb(216, 52, 142);
     text-align: center;
+    font-size: 0.260in;
+    position:static
   }
   h3 {
     color: hsl(179, 100%, 47%);
+    font-size: 0.5cm;
+    position:static
   }
 
   /* for centering my images */
   img.center {
     display: block;
     margin: 0 auto;
+    width: 30vw;
     }
   video {
     display: block;
     margin: 0 auto;
+    width: 40vw;
+    height: 50vh;
     }
   figure {
     display: block;
     margin: 0 auto;
+    max-width: 60vmax;
+    min-width: 50vmin;
     }
+
