@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting Minutes Document</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
         <style>
           /* setting the background color to a nice soft green :) */
           body {
@@ -16,6 +20,10 @@
               background-color: rgb(233, 150, 25);
             }
           }
+
+          p {color: rgb(0, 17, 255);}
+          p.withinline {display: inline;}
+          p.separateline {display: block;}
         </style>
 
     </head>
@@ -31,7 +39,7 @@
 
           <main>
 
-            <h1> Neighborhood Forest Homeowners Association Meeting Minutes</h1>
+            <h1 style="font-family: 'Italianno', cursive;"> Neighborhood Forest Homeowners Association Meeting Minutes</h1>
             <h2>Board of Directors Meeting</h3>
             <h2>October 1, 2021</h3>
 
@@ -76,11 +84,11 @@
 
             
               <h2>Call To Order</h2>
-              <p style="text-align: center;">
+              <div style="text-align: center;">
                 The Open Session Board of Directors meeting for the 
-                Neighborhood Forest Homeowners Association was called
+                <p class="withinline">Neighborhood Forest Homeowners Association</p> was called
                 to order at 7:11 p.m.
-              </p>
+              </div>
 
 
             <h2 id="agenda">Agenda</h2>
@@ -114,12 +122,12 @@
                   width="250"
                 />
                 <h4 style="position: relative; left: 150px;">Proposal:</h4>
-                <p style="position: relative; left: 150px;">
+                <div style="position: relative; left: 150px;">
                   I would like to build a <strong> helipad</strong> in the front of my house
                   instead of on top because I think it looks much <i> cooler</i>
                   and also I have all the <em> money</em> to do it. <br>I am also offering free
                   helicopter rides to the board members.
-                </p>
+                </div>
 
                 <video controls width="250">
                     <source 
@@ -156,16 +164,16 @@
 
               <section>
                 <h2>Next Meeting</h2>
-                <p style="text-align: center;">
+                <div style="text-align: center;">
                   The next Open Session meeting of the Board of Directors is scheduled
-                  for November 1, 2021.
-                </p>
+                  for: <p class="separateline"> November 1, 2021</p>
+                </div>
   
               <h2>Adjournment</h2>
-                <p style="text-align: center;">
+                <div style="text-align: center;">
                   There being no further business to come before the Board of Directors
                   in Open Session, the meeting was adjourned at 9:28 p.m.
-                </p>
+                </div>
               </section>
 
               <details>
