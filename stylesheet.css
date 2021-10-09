@@ -1,11 +1,15 @@
-/* i like purple for the biggest text */
-  h1 {
+  /* attribute selector - I like purple for the main title */
+  h1[title="main"] {
     color: purple;
+  }
+  /* class selector */
+  .titleheader{
     text-decoration: underline;
     text-align: center;
     font-size:60px;
     position:static;
   }
+
   h2 {
     color: rgb(216, 52, 142);
     text-align: center;
@@ -18,25 +22,25 @@
     position:static
   }
 
-  /* for centering my images */
-  img.center {
+  /* selector list for centering*/
+  img, video, figure {
     display: block;
     margin: 0 auto;
+  }
+
+  img {
     width: 30vw;
     }
   video {
-    display: block;
-    margin: 0 auto;
     width: 40vw;
     height: 50vh;
     }
   figure {
-    display: block;
-    margin: 0 auto;
     max-width: 60vmax;
     min-width: 50vmin;
     }
 
+  /* element selector */  
   ol {
     background-color: pink;
     width: 350px;
@@ -47,6 +51,48 @@
     padding: 50px, 60px, 70px, 80px;
     margin: 60px, 50px, 40px, 30px;
     }
+
+    /* flex container for electees */
+    .flex-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-grow: 1;
+
+    }
+      .flex-container > div {
+        background-color: pink;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .first { grid-area: one; }
+    .second { grid-area: two; }
+    .third { grid-area: three; }
+    .fourth { grid-area: four; }
+    .fifth { grid-area: five; }
+
+    /* grid container for landscape vendors */
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
+            'five';
+        grid-gap: 10px;
+      }
+    .grid-container > div {
+        background-color: rgb(141, 33, 173);
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 30px;
+      }
+
+    /* pseudo selectors */
     button:hover {
         background-color: rgb(202, 20, 20);
       }
@@ -54,3 +100,37 @@
         background-color: rgb(0, 255, 13);
       }
 
+    /* id selector */
+    #yellowbackground {
+    background-color: yellow;
+    }
+
+    /* universal selector */
+    * {
+        opacity: 1;
+    }
+
+    /* decendant combinator */
+    li li {
+        list-style-type: circle;
+      }
+
+    /* child combinators */
+    div > span {
+        font-family: 'Italianno', cursive;
+    }
+
+    /* general sibling combinator */
+    div ~ p {
+        color: red;
+      }
+
+    /* adjacent sibling combinator */
+    img + p {
+        font-style: italic;
+      }
+
+    /* combining two selectors */
+    #make.purple { 
+        color: purple; 
+    }
